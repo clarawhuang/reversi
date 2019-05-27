@@ -52,14 +52,14 @@ socket.on('join_room_response',function(payload){
 
 		var nodeB = $('<div></div>');
 		nodeB.addClass('socket_'+payload.socket_id);
-		
+
 		var nodeC = $('<div></div>');
 		nodeC.addClass('socket_'+payload.socket_id);
 
 		nodeA.addClass('w-100');
 
 		nodeB.addClass('col-9 text-right');
-		nodeB.append('<h4>'+payload.username+'</h4>');
+		nodeB.append('<h4>'+payload.username +'</h4>');
 
 		nodeC.addClass('col-3 text-left');
 		var buttonC = makeInviteButton();
