@@ -334,7 +334,7 @@ io.sockets.on('connection',function(socket){
 		/* tell the invitee that they have been invited */		
 		var success_data = {
 								result: 'success',
-								socket_id: socket_id
+								socket_id: socket.id
 							};
 		socket.to(requested_user).emit('invited', success_data);
 
@@ -432,7 +432,7 @@ io.sockets.on('connection',function(socket){
 		/* tell the uninvitee that they have been uninvited */		
 		var success_data = {
 								result: 'success',
-								socket_id: socket_id
+								socket_id: socket.id
 							};
 		socket.to(requested_user).emit('uninvited', success_data);
 
@@ -522,7 +522,7 @@ io.sockets.on('connection',function(socket){
 		/* tell the other player to play */		
 		var success_data = {
 								result: 'success',
-								socket_id: socket_id,
+								socket_id: socket.id,
 								game_id: game_id
 							};
 		socket.to(requested_user).emit('game_start', success_data);
