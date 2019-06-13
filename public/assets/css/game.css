@@ -1,5 +1,6 @@
 body {
-    background-image: url("../images/green.png");
+    background-color: #c8c8c8;
+    background-image: url('../images/background-2.jpg');
 }
 
 table#game_board {
@@ -7,6 +8,7 @@ table#game_board {
 	border-style:solid;
 	border-width: 10px;
 	border-color:rgb(100,100,100);
+	background-color: #ffffff;
 }
 
 table#game_board td{
